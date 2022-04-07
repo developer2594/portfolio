@@ -1716,9 +1716,9 @@ body {
 
 .menu-catalog__back {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1771,8 +1771,11 @@ body {
 }
 
 .sub-menu-catalog__back {
-  position: relative;
-  top: -258px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 2.5625rem;
   left: -100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1784,11 +1787,7 @@ body {
 }
 
 .sub-menu-open .sub-menu-catalog__back {
-  left: 0;
-}
-
-.sub-menu-catalog__back:not(:last-child) {
-  margin-bottom: 1.5em;
+  left: 15px;
 }
 
 .sub-menu-catalog__back::before {
@@ -1799,14 +1798,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1rem;
-  line-height: 1.125;
   font-weight: 700;
   padding: 0.625rem 0.9375rem 0.625rem 0;
 }
 
 .sub-menu-catalog__link {
-  font-size: 0.875rem;
   line-height: 1.1428571429;
 }
 
@@ -3521,7 +3517,7 @@ body {
   }
 
   .sub-menu-catalog__back {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .sub-menu-catalog__link-category {
@@ -3826,7 +3822,7 @@ body {
     left: -100%;
     overflow: auto;
     background-color: #141414;
-    padding: 5.625rem 0.9375rem 3.125rem 1.5625rem;
+    padding: 5.3125rem 0.9375rem 3.125rem 1.5625rem;
   }
 
   .sub-menu-catalog__block._sub-menu-open {
@@ -3926,12 +3922,17 @@ body {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     row-gap: 1.875rem;
+    padding: 0rem 0rem 1.25rem 0rem;
   }
 }
 
 @media (max-width: 61.99875em) and (max-width: 20em) {
   .menu-top-header__link {
     font-size: 1.5rem;
+  }
+
+  .menu-top-header__link_catalog {
+    font-size: 1.625rem;
   }
 
   .menu-catalog__list {
@@ -4255,6 +4256,10 @@ body {
     font-size: 1.625rem;
   }
 
+  .menu-top-header__link_catalog {
+    font-size: 1.875rem;
+  }
+
   .menu-catalog__list {
     font-size: 1.125rem;
   }
@@ -4263,6 +4268,10 @@ body {
 @media (max-width: 61.99875em) and (min-width: 20em) and (max-width: 62em) {
   .menu-top-header__link {
     font-size: calc(1.5rem + 0.125 * (((100vw - 20rem)) / ((42))));
+  }
+
+  .menu-top-header__link_catalog {
+    font-size: calc(1.625rem + 0.25 * (((100vw - 20rem)) / ((42))));
   }
 
   .menu-catalog__list {
@@ -4296,7 +4305,7 @@ body {
   }
 
   .sub-menu-catalog__back {
-    font-size: calc(1rem + 0.5 * (((100vw - 20rem)) / ((27.9375))));
+    font-size: calc(1.25rem + 0.25 * (((100vw - 20rem)) / ((27.9375))));
   }
 
   .sub-menu-catalog__link-category {
