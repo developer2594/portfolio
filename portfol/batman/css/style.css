@@ -120,6 +120,7 @@ body {
   overflow: hidden;
   -ms-grid-rows: auto 1fr auto;
   grid-template-rows: auto 1fr auto;
+  background-color: #0a090a;
 }
 
 /*
@@ -419,7 +420,6 @@ body {
 }
 
 .content {
-  background-color: #0a090a;
   position: relative;
   z-index: 3;
 }
