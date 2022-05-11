@@ -606,7 +606,7 @@ body {
 .header-healthcare__text-center {
   max-width: 48.125rem;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .header-healthcare__title span {
@@ -1110,6 +1110,7 @@ body {
 
   .text {
     margin: 0px 0px 0.75rem 0px;
+    padding: 0rem 0.3125rem 0rem 0rem;
   }
 
   .stay-safe__container {
